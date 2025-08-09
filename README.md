@@ -8,9 +8,9 @@
    <a href="https://nextjs.org" aria-label="Framework">
       <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=Next.js&labelColor=000" />
    </a>
-   <img alt="Top Language" src="https://img.shields.io/github/languages/top/techwithanirudh/shadcn-portfolio?style=for-the-badge&labelColor=000" />
-   <a href="https://github.com/techwithanirudh/shadcn-portfolio/blob/main/LICENSE" aria-label="License">
-      <img alt="License" src="https://img.shields.io/github/license/techwithanirudh/shadcn-portfolio?style=for-the-badge&labelColor=000" />
+   <img alt="Top Language" src="https://img.shields.io/github/languages/top/bribkn/portfolio?style=for-the-badge&labelColor=000" />
+   <a href="https://github.com/bribkn/portfolio/blob/main/LICENSE" aria-label="License">
+      <img alt="License" src="https://img.shields.io/github/license/bribkn/portfolio?style=for-the-badge&labelColor=000" />
    </a>
 </div>
 
