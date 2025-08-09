@@ -83,7 +83,7 @@ const ContactSection = () => (
       transition={{ duration: 0.7, delay: 0.2 }}
       viewport={{ once: true }}
     >
-      Want to work with me or have any questions? Let's talk!
+      Want to work with me or have any questions? Let&apos;s talk!
     </motion.p>
     <motion.div
       className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-2xl mx-auto"

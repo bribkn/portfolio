@@ -2,6 +2,7 @@
 import { ExternalLink } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { motion, fadeInUp, stagger } from '@/lib/motion-presets'
+import Image from 'next/image'
 
 const projects = [
   {
@@ -30,10 +31,13 @@ const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => (
     <div className="md:w-1/2 w-full flex justify-center align-top">
       <Card className="rounded-2xl border-2 border-sky-500/80 shadow-lg overflow-hidden w-full max-w-md mx-auto">
         <CardContent className="p-0">
-          <img
+          <Image
             src={project.image}
             alt={project.title}
+            width={600}
+            height={320}
             className="w-full h-64 md:h-80 bg-neutral-900 p-8 object-contain"
+            priority
           />
         </CardContent>
       </Card>
