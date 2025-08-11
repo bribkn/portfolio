@@ -1,3 +1,4 @@
+'use client'
 import Image from 'next/image'
 const AboutSection = () => (
   <section id="about" className="scroll-mt-24 py-10 px-2 sm:px-4 flex flex-col relative">
@@ -16,14 +17,28 @@ const AboutSection = () => (
           React, and modern technologies. I specialize in building clean and functional interfaces,
           prioritizing user experience and performance.
         </p>
-        <a
-          href="/CV_eng.pdf"
-          target="_blank"
-          rel="noopener"
-          className="mt-4 sm:mt-6 inline-block rounded-lg px-4 sm:px-6 py-2 font-semibold border-2 border-sky-600 text-sky-600 bg-white dark:bg-black dark:text-sky-400 dark:border-sky-400 shadow transition-all duration-200 hover:shadow-lg hover:bg-sky-50 dark:hover:bg-sky-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
-        >
-          Get my resume
-        </a>
+        <div className="mt-4 sm:mt-6 flex flex-row gap-3">
+          <a
+            href="/CV_eng.pdf"
+            target="_blank"
+            rel="noopener"
+            className="inline-block rounded-lg px-4 sm:px-6 py-2 font-semibold border-2 border-sky-600 text-sky-600 bg-white dark:bg-black dark:text-sky-400 dark:border-sky-400 shadow transition-all duration-200 hover:shadow-lg hover:bg-sky-50 dark:hover:bg-sky-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+          >
+            Get my resume
+          </a>
+          <button
+            type="button"
+            onClick={() => {
+              const el = document.getElementById('contact')
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth' })
+              }
+            }}
+            className="inline-block rounded-lg px-4 sm:px-6 py-2 font-semibold border-2 border-sky-600 text-sky-600 bg-white dark:bg-black dark:text-sky-400 dark:border-sky-400 shadow transition-all duration-200 hover:shadow-lg hover:bg-sky-50 dark:hover:bg-sky-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-400"
+          >
+            Contact Me
+          </button>
+        </div>
       </div>
       <div className="flex-1 flex justify-center items-center w-full mt-4 md:mt-0">
         <div className="relative group w-64 h-64 sm:w-48 sm:h-48 md:w-64 md:h-64 max-w-full">

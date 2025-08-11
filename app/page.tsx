@@ -11,9 +11,9 @@ export default function Home() {
     <main id="top" className="mx-auto max-w-6xl px-6 md:px-16">
       <FadeIn>
         <AboutSection />
+        <ProjectsSection />
         <AboutMeSection />
         <SkillsSection />
-        <ProjectsSection />
         <ContactSection />
       </FadeIn>
       <Footer />
