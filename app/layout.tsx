@@ -3,9 +3,10 @@ import './globals.css'
 import ThemeProvider from '@/components/custom/theme-provider'
 import SiteHeader from '@/components/custom/site-header'
 import Background from '@/components/custom/background'
-import { Roboto } from 'next/font/google'
+import ContactSidebar from '@/components/custom/contact-sidebar'
+import { Quicksand } from 'next/font/google'
 
-const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap' })
+const roboto = Quicksand({ subsets: ['latin'], weight: ['400'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Brian Bastías - Portfolio',
@@ -62,8 +63,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={roboto.className}>
       <body>
         <ThemeProvider>
-          {/* Animated background behind all content */}
           <Background />
+          <ContactSidebar />
           <div className="relative z-10">
             <SiteHeader />
             {children}

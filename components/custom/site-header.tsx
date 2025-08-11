@@ -3,6 +3,7 @@
 import ThemeToggle from './theme-toggle'
 import { Sheet, SheetTrigger, SheetContent, SheetTitle } from '@/components/ui/sheet'
 import { motion } from 'framer-motion'
+import { contacts } from '@/utils/contacts'
 
 const scrollToSection = (id: string) => {
   const el = document.getElementById(id)
@@ -96,8 +97,27 @@ const SiteHeader = () => {
                 </motion.a>
               ))}
             </nav>
-            <div className="mt-auto flex justify-center pt-8 pb-6">
-              <ThemeToggle />
+            <div className="absolute bottom-0 left-0 w-full flex flex-col items-center pb-6">
+              <div className="flex flex-row justify-center gap-6 mb-4">
+                {contacts
+                  .filter((c) => c.label !== 'Resume')
+                  .map((contact) => {
+                    const isExternal = contact.href.startsWith('http')
+                    const linkProps = {
+                      href: contact.href,
+                      ...(isExternal && { target: '_blank', rel: 'noopener noreferrer' }),
+                      ...(contact.download && { download: true }),
+                    }
+                    return (
+                      <a key={contact.label} {...linkProps}>
+                        <contact.icon size={28} />
+                      </a>
+                    )
+                  })}
+              </div>
+              <div className="flex justify-center">
+                <ThemeToggle />
+              </div>
             </div>
           </SheetContent>
         </Sheet>

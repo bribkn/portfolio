@@ -8,7 +8,7 @@ import ContactSection from '@/components/custom/contact-section'
 import Footer from '@/components/custom/footer'
 export default function Home() {
   return (
-    <main id="top" className="mx-auto max-w-4xl px-6 lg:px-0">
+    <main id="top" className="mx-auto max-w-6xl px-6 md:px-16">
       <FadeIn>
         <AboutSection />
         <AboutMeSection />

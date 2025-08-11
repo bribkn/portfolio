@@ -29,7 +29,7 @@ const AboutMeSection = () => (
       transition={{ duration: 0.7 }}
       viewport={{ once: true }}
     >
-      About My
+      About Me
     </motion.h2>
     <div className="relative flex flex-col items-center w-full max-w-4xl mx-auto">
       <div
