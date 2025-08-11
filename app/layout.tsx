@@ -2,21 +2,42 @@ import type { Metadata } from 'next'
 import './globals.css'
 import ThemeProvider from '@/components/custom/theme-provider'
 import SiteHeader from '@/components/custom/site-header'
+import Background from '@/components/custom/background'
 import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ['400', '500', '700'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Brian Bastías - Portfolio',
-  description: 'Full Stack Developer. Next.js • React • UI',
+  description: 'Full Stack Developer • Next.js • React • UI',
   metadataBase: new URL('https://brianbastias.cl'),
   openGraph: {
     title: 'Brian Bastías - Portfolio',
-    description: 'Full Stack Developer. Next.js • React • UI',
+    description: 'Full Stack Developer • Next.js • React • UI',
     url: 'https://brianbastias.cl',
     siteName: 'Portfolio',
-    images: [{ url: '/profile-brian.jpg', width: 630, height: 630 }],
+    images: [
+      {
+        url: '/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Brian Bastías - Portfolio',
+      },
+    ],
     type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Brian Bastías - Portfolio',
+    description: 'Full Stack Developer • Next.js • React • UI',
+    images: [
+      {
+        url: '/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Brian Bastías - Portfolio',
+      },
+    ],
   },
   icons: {
     icon: [
@@ -41,8 +62,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className={roboto.className}>
       <body>
         <ThemeProvider>
-          <SiteHeader />
-          {children}
+          {/* Animated background behind all content */}
+          <Background />
+          <div className="relative z-10">
+            <SiteHeader />
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

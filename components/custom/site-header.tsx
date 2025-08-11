@@ -74,7 +74,7 @@ const SiteHeader = () => {
             </button>
           </SheetTrigger>
           <SheetContent side="left" className="p-0 flex flex-col">
-            <SheetTitle className="sr-only">Menú principal</SheetTitle>
+            <SheetTitle className="sr-only">Menu</SheetTitle>
             <nav className="flex flex-col gap-4 mt-12 px-6">
               {sections.map((item, idx) => (
                 <motion.a

@@ -20,6 +20,46 @@ const projects = [
       'Live workshops that inspire and foster curiosity and the joy of learning, featuring renowned figures from culture and knowledge. The platform offers interactive sessions, community engagement, and a curated selection of topics to spark lifelong learning.',
     liveUrl: 'https://talleresdebolsillo.cl',
   },
+  {
+    title: 'SmartHub',
+    image: '/smart-hub-mockup.png',
+    madeWith: [
+      { name: 'TypeScript', color: 'text-sky-500' },
+      { name: 'Next.js', color: 'text-sky-500' },
+      { name: 'React', color: 'text-sky-500' },
+      { name: 'GCP', color: 'text-sky-500' },
+      { name: 'PostgreSQL', color: 'text-sky-500' },
+      { name: 'TailwindCSS', color: 'text-sky-500' },
+    ],
+    description:
+      'A customizable software platform that enables clients to sell products and services online. It offers flexible tools for personalizing storefronts, managing inventory, processing payments, and tailoring the customer experience to specific business needs.',
+    liveUrl: 'https://hub.smartside.cl',
+  },
+  {
+    title: 'Electronic PDF Signer',
+    image: '/signer-mockup.png',
+    madeWith: [
+      { name: 'Next.js', color: 'text-sky-500' },
+      { name: 'React', color: 'text-sky-500' },
+      { name: 'Golang', color: 'text-sky-500' },
+      { name: 'Canvas', color: 'text-sky-500' },
+      { name: 'PDF.js', color: 'text-sky-500' },
+      { name: 'Material UI', color: 'text-sky-500' },
+    ],
+    description:
+      'A web application that allows users to sign PDF documents electronically, providing a seamless and secure signing experience.',
+    liveUrl: 'https://vti.uchile.cl/universidad-de-chile-actualiza-sistema-de-firma-electronica/',
+  },
+  {
+    title: 'Mineplan Plug-ins',
+    image: '/mineplan-mockup.png',
+    madeWith: [
+      { name: 'Python', color: 'text-sky-500' },
+      { name: 'PostgreSQL', color: 'text-sky-500' },
+    ],
+    description:
+      'Plugins for mining software that automate processes, evaluate geological and design data, and generate reports and visual outputs for streamlined decision-making.',
+  },
 ]
 
 const ProjectCard = ({ project }: { project: (typeof projects)[0] }) => (
