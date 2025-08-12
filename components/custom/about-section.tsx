@@ -15,7 +15,7 @@ const AboutSection = () => (
         <p className="text-black dark:text-gray-300 text-base sm:text-xl leading-relaxed">
           I&apos;m a software engineer passionate about creating digital products with Next.js,
           React, and modern technologies. I specialize in building clean and functional interfaces,
-          prioritizing user experience and performance.
+          prioritizing user experience, and performance.
         </p>
         <div className="mt-4 sm:mt-6 flex flex-row gap-3">
           <a
